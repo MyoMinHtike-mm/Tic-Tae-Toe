@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Tic Tae Toe</title>
+    <link rel="stylesheet" href="../TicTaeToe/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body>
+      <div class="container">
+
+        <!-- starting_page -->
+        <div id="starting_page">
+          <h2>Tic Tae Toe Game</h2>
+          <div class="line"></div>
+          <p>What to want be player</p>
+          <div class="buttons">
+            <button type="button" id="playerX"  class="btns" name="button">Player'<b>X</b></button>
+            <button type="button" id="playerY" class="btns" name="button">Player'<b>Y</b></button>
+          </div>
+        </div>
+
+        <!-- main page -->
+        <div id="main">
+          <div id="btn_header">
+            <button type="button" id="mainfirst_btn" name="button">X'Turn</button>
+            <button type="button" id="mainsecond_btn" name="button">Y'Turn</button>
+            <div id="slide"></div>
+          </div>
+          <div id="boxes">
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+          </div>
+        </div>
+
+        <!-- Win win Stitution -->
+        <div id="win_stitution">
+          <h2 id="winner_player">Player'X win the game</h2>
+            <div id="playAgain_btn">
+              <button type="button" id="playAgain_btn_button" name="button">Play Again</button>
+        </div>
+
+        <script src="../TicTaeToe/main.js"></script>
+  </body>
+</html>

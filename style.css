@@ -1,0 +1,168 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: borer-box;
+}
+
+body{
+  width: 100%;
+  min-height: 100vh;
+  background: #2b2d36;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container{
+  width: auto;
+  height: auto;
+  color: #fff;
+  font-family: arial;
+  background: #3f64c9;
+}
+
+#starting_page{
+  width: 400px;
+  text-align: center;
+  display: block;
+}
+
+#starting_page h2{
+    padding: 10px 0;
+}
+
+.line{
+  width: 80%;
+  height: 3px;
+  background: #fff;
+  margin: 5px auto;
+}
+
+#starting_page p{
+  font-size: 20px;
+  padding-top: 5px;
+  padding-bottom: 20px;
+}
+
+#starting_page .buttons{
+  width: 100%;
+  height: auto;
+  /* display: flex;
+  justify-content: space-around;
+  align-items: center; */
+}
+
+#starting_page .buttons button, #win_stitution button{
+  width: 100px;
+  height: 33px;
+  margin-bottom: 20px;
+  font-size: 17px;
+  font-family: arial;
+  border-radius: 5px;
+  cursor: pointer;
+  border-color: transparent;
+  transform: scale(1);
+  transition: 0.5s;
+  margin-right: 10px;
+  color: #18969c;
+}
+
+#starting_page .buttons button:hover{
+  transform: scale(0.9);
+}
+
+#main{
+  position: relative;
+  width: 400px;
+  height: 450px;
+  background: #000311;
+  border: 1px solid #010518;
+  padding: 10px;
+  display: none;
+}
+
+#main #btn_header{
+  width: 70%;
+  height: 40px;
+  background: #fff;
+  margin: 10px auto;
+  border-radius: 100px;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  border: 1px solid transparent;
+
+
+}
+
+#main #btn_header button{
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 20px;
+  width: 50%;
+  height: 40px;
+  border-radius: 100px;
+  background: transparent;
+  border: none;
+
+}
+
+#main #btn_header #mainfirst_btn{
+
+  z-index: 2;
+}
+
+#main #btn_header #mainsecond_btn{
+  z-index: 3;
+    left: 50%;
+}
+
+#slide{
+  position: absolute;
+  top: 0;
+  left: 0%;
+  width: 50%;
+  height: 40px;
+  background: #2db7d8;
+  border-radius: 100px;
+  transition: 1s;
+}
+
+#boxes{
+  position: absolute;
+  top: 20%;
+  left: 10%;
+  width: 400px;
+  height: auto;
+  display: grid;
+  grid-template-columns: 100px 100px 100px;
+  grid-gap: 15px;
+
+}
+
+.box{
+  width: 100px;
+  height: 100px;
+  box-shadow: 2px 2px 5px #161a36, -3px -3px 5px #161a36;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 4rem;
+}
+
+/* #main #btn_header button:last-child{
+  position: absolute;
+  left: 100px;
+} */
+
+#win_stitution{
+  width: 400px;
+  height: 120px;
+  text-align: center;
+  display: none;
+}
+
+#win_stitution h2{
+  padding: 20px 0px;
+}
